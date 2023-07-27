@@ -1,12 +1,17 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
-import { Button } from "@nextui-org/react";
-const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
+import RootLayout from "@/Layouts/RootLayout";
+
+export default function HomePage() {
   return (
     <div>
-      <Button>Click Me</Button>
+      <h1>This is a text</h1>
     </div>
   );
 }
+
+HomePage.getLayout = function getLayout(page) {
+  return <RootLayout>{page}</RootLayout>;
+};
