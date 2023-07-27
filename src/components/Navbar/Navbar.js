@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Dropdown } from "@nextui-org/react";
 const Navbar = () => {
   return (
     <div>
@@ -21,7 +21,17 @@ const Navbar = () => {
             <span class="ml-3 text-xl">Tailblocks</span>
           </a>
           <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a class="mr-5 hover:text-gray-900">First Link</a>
+            <Dropdown>
+              <Dropdown.Button flat>Trigger</Dropdown.Button>
+              <Dropdown.Menu aria-label="Static Actions">
+                <Dropdown.Item key="new">New file</Dropdown.Item>
+                <Dropdown.Item key="copy">Copy link</Dropdown.Item>
+                <Dropdown.Item key="edit">Edit file</Dropdown.Item>
+                <Dropdown.Item key="delete" color="error">
+                  Delete file
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
             <a class="mr-5 hover:text-gray-900">Second Link</a>
             <a class="mr-5 hover:text-gray-900">Third Link</a>
             <a class="mr-5 hover:text-gray-900">Fourth Link</a>

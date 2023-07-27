@@ -7,7 +7,7 @@ import RootLayout from "@/Layouts/RootLayout";
 export default function HomePage() {
   return (
     <div>
-      <h1>This is a text</h1>
+      <p className="text-red-400 text-3xl">This is a text</p>
     </div>
   );
 }
