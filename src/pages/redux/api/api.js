@@ -7,7 +7,7 @@ export const apiSlice = createApi({
 
   endpoints: (builder) => ({
     getProducts: builder.query({
-      query: () => "/",
+      query: () => "/api/featured",
     }),
   }),
 });

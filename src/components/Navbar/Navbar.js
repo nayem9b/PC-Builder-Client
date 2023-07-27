@@ -1,5 +1,6 @@
 import React from "react";
 import { Dropdown } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 const Navbar = () => {
   return (
     <div>
@@ -32,7 +33,9 @@ const Navbar = () => {
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
-            <a class="mr-5 hover:text-gray-900">Second Link</a>
+            <Button color="success" auto>
+              Success
+            </Button>
             <a class="mr-5 hover:text-gray-900">Third Link</a>
             <a class="mr-5 hover:text-gray-900">Fourth Link</a>
           </nav>
