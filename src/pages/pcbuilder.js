@@ -1,5 +1,5 @@
 import RootLayout from "@/Layouts/RootLayout";
-import { Text } from "@nextui-org/react";
+import { Button, Text } from "@nextui-org/react";
 
 import React from "react";
 
@@ -36,7 +36,9 @@ const pcbuilder = () => {
       >
         Prettier
       </Text>
-      <Text>This is a Text</Text>
+      <Button flat color="secondary" auto>
+        Primary
+      </Button>
     </div>
   );
 };
@@ -45,4 +47,15 @@ export default pcbuilder;
 
 pcbuilder.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
+};
+
+export const getServerSideProps = async () => {
+  const res = await fetch(`http://localhost:5000/api/pcbuilder`);
+  const data = await res.json();
+  console.log(data);
+  return {
+    props: {
+      pcBuilder: data,
+    },
+  };
 };

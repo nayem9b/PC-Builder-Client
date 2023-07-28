@@ -2,6 +2,9 @@ import RootLayout from "@/Layouts/RootLayout";
 import FeaturedCard from "../components/LandingPage/FeaturedCard";
 import FeaturedCategory from "@/components/LandingPage/FeaturedCategory";
 import Link from "next/link";
+import TrustedBy from "@/components/LandingPage/TrustedBy";
+import Testimonial from "@/components/LandingPage/Testimonial";
+import WatchCTA from "@/components/LandingPage/watchCTA";
 
 export default function HomePage({ featured }) {
   const featuredCategories = [
@@ -11,6 +14,7 @@ export default function HomePage({ featured }) {
   ];
   return (
     <div>
+      <WatchCTA></WatchCTA>
       <div className="grid grid-cols-3 gap-4">
         {featured?.map((product) => (
           <FeaturedCard key={product.image} product={product}></FeaturedCard>
@@ -25,6 +29,8 @@ export default function HomePage({ featured }) {
           </Link>
         ))}
       </div>
+      <TrustedBy></TrustedBy>
+      <Testimonial></Testimonial>
     </div>
   );
 }

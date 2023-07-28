@@ -1,0 +1,22 @@
+[
+  {
+    "itemName": "Processor",
+    "logo": "gg",
+    "route": "/category/processor"
+  },
+  {
+    "itemName": "Monitor",
+    "logo": "gg",
+    "route": "/category/monitor"
+  },
+  {
+    "itemName": "Ram",
+    "logo": "gg",
+    "route": "/category/ram"
+  },
+  {
+    "itemName": "Storage",
+    "logo": "gg",
+    "route": "/category/storage"
+  }
+]
