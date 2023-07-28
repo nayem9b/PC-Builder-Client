@@ -1,8 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { apiSlice } from "./api/api";
+
 import storage from "redux-persist/lib/storage";
 import { combineReducers } from "@reduxjs/toolkit";
 import { persistReducer } from "redux-persist";
+import { apiSlice } from "./api/api";
 const persistConfig = {
   key: "root",
   version: 1,

@@ -1,6 +1,5 @@
 import RootLayout from "@/Layouts/RootLayout";
 import FeaturedCard from "../components/LandingPage/FeaturedCard";
-import { useGetProductsQuery } from "./redux/api/api";
 import FeaturedCategory from "@/components/LandingPage/FeaturedCategory";
 import Link from "next/link";
 
