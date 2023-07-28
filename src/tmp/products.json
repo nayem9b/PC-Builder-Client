@@ -1,0 +1,42 @@
+[
+  {
+    "productName": "abc",
+    "image": "gg",
+    "categoty": "Mouse",
+    "price": 100,
+    "status": "In Stock",
+    "rating": 4.5
+  },
+  {
+    "productName": "abc",
+    "image": "gg",
+    "categoty": "Processor",
+    "price": 100,
+    "status": "In Stock",
+    "rating": 4.5
+  },
+  {
+    "productName": "abc",
+    "image": "gg",
+    "categoty": "Monitor",
+    "price": 100,
+    "status": "In Stock",
+    "rating": 4.5
+  },
+  {
+    "productName": "abc",
+    "image": "gg",
+    "categoty": "ram",
+    "price": 100,
+    "status": "In Stock",
+    "rating": 4.5
+  },
+  {
+    "productName": "abc",
+    "image": "gg",
+    "categoty": "Monitor",
+    "price": 100,
+    "status": "In Stock",
+    "rating": 4.5
+  }
+]

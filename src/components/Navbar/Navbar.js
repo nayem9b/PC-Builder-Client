@@ -1,7 +1,14 @@
 import React from "react";
 import { Dropdown } from "@nextui-org/react";
 import { Button } from "@nextui-org/react";
+import Link from "next/link";
 const Navbar = () => {
+  const categories = [
+    { name: "motherboard", route: "/category/motherboard" },
+    { name: "ram", route: "/category/ram" },
+    { name: "processor", route: "/category/processor" },
+    { name: "monitor", route: "/category/monitor" },
+  ];
   return (
     <div>
       <header class="text-gray-600 body-font">
@@ -25,12 +32,17 @@ const Navbar = () => {
             <Dropdown>
               <Dropdown.Button flat>Trigger</Dropdown.Button>
               <Dropdown.Menu aria-label="Static Actions">
-                <Dropdown.Item key="new">New file</Dropdown.Item>
-                <Dropdown.Item key="copy">Copy link</Dropdown.Item>
+                {categories.map((category) => (
+                  <Dropdown.Item key={category?.name}>
+                    <Link href={category?.route}>{category?.name}</Link>
+                  </Dropdown.Item>
+                ))}
+
+                {/* <Dropdown.Item key="copy">Copy link</Dropdown.Item>
                 <Dropdown.Item key="edit">Edit file</Dropdown.Item>
                 <Dropdown.Item key="delete" color="error">
                   Delete file
-                </Dropdown.Item>
+                </Dropdown.Item> */}
               </Dropdown.Menu>
             </Dropdown>
             <Button color="success" auto>
