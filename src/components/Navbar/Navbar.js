@@ -34,7 +34,7 @@ const Navbar = () => {
               <Dropdown.Menu aria-label="Static Actions">
                 {categories.map((category) => (
                   <Dropdown.Item key={category?.name}>
-                    <Link href={category?.route}>{category?.name}</Link>
+                    <Link href={category.route}>{category?.name}</Link>
                   </Dropdown.Item>
                 ))}
 

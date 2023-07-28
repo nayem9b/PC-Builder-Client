@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Col, Row, Button, Text } from "@nextui-org/react";
-const FeaturedCard = () => {
+const FeaturedCard = ({ product }) => {
+  console.log(product);
   return (
     <div>
       <Card css={{ w: "100%", h: "400px" }}>
@@ -15,7 +16,7 @@ const FeaturedCard = () => {
               New
             </Text>
             <Text h3 color="black">
-              Acme camera
+              {product?.productName}
             </Text>
           </Col>
         </Card.Header>

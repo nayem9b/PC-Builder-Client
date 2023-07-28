@@ -1,16 +1,13 @@
 import RootLayout from "@/Layouts/RootLayout";
+import ProductInfoCard from "@/components/categoryPage/productInfoCard";
 import React from "react";
 
 const CategoryPage = ({ singleCategory }) => {
   return (
-    <div>
+    <div className="grid grid-cols-5 gap-4">
       {singleCategory.map((product) => (
-        <div>
-          <h1>{product.productName}</h1>
-          <h1>{product.price}</h1>
-        </div>
+        <ProductInfoCard product={product}></ProductInfoCard>
       ))}
-      <h1>Hello</h1>
     </div>
   );
 };

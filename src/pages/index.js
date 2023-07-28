@@ -2,8 +2,14 @@ import RootLayout from "@/Layouts/RootLayout";
 import FeaturedCard from "../components/LandingPage/FeaturedCard";
 import { useGetProductsQuery } from "./redux/api/api";
 import FeaturedCategory from "@/components/LandingPage/FeaturedCategory";
+import Link from "next/link";
 
 export default function HomePage({ featured }) {
+  const featuredCategories = [
+    { name: "Processor", route: "/category/processor" },
+    { name: "Ram", route: "/category/ram" },
+    { name: "Monitor", route: "/category/monitor" },
+  ];
   return (
     <div>
       <div className="grid grid-cols-3 gap-4">
@@ -11,15 +17,24 @@ export default function HomePage({ featured }) {
           <FeaturedCard key={product.image} product={product}></FeaturedCard>
         ))}
       </div>
-      <FeaturedCategory></FeaturedCategory>
+      <div className="grid grid-cols-4">
+        {featuredCategories.map((featuredCategory) => (
+          <Link href={featuredCategory.route}>
+            <FeaturedCategory
+              featuredCategory={featuredCategory}
+            ></FeaturedCategory>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch("http://localhost:5000/api/featured");
+  const res = await fetch("http://localhost:5000/api/products");
   const data = await res.json();
-  console.log(data);
+  const selectedData = data.slice(0, 3);
+  console.log("selectedData:", selectedData);
   return {
     props: {
       featured: data,

@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Col, Text } from "@nextui-org/react";
-const FeaturedCategory = () => {
+const FeaturedCategory = ({ featuredCategory }) => {
   return (
     <div>
       <Card css={{ w: "100%" }}>
@@ -15,7 +15,7 @@ const FeaturedCategory = () => {
               Plant a tree
             </Text>
             <Text h4 color="white">
-              Contribute to the planet
+              {featuredCategory.name}
             </Text>
           </Col>
         </Card.Header>
