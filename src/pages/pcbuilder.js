@@ -5,7 +5,7 @@ import React from "react";
 
 const pcbuilder = () => {
   return (
-    <div>
+    <div className="h-screen">
       <Text
         h1
         size={60}

@@ -1,13 +1,26 @@
 import RootLayout from "@/Layouts/RootLayout";
 import ProductInfoCard from "@/components/categoryPage/productInfoCard";
+import { useRouter } from "next/router";
 import React from "react";
 
 const CategoryPage = ({ singleCategory }) => {
+  const router = useRouter();
+
   return (
-    <div className="grid grid-cols-5 gap-4">
-      {singleCategory.map((product) => (
-        <ProductInfoCard product={product}></ProductInfoCard>
-      ))}
+    <div>
+      <div className="text-center justify-center flex mt-16">
+        <h1>Available</h1>
+        <h1 className="text-6xl p-4 -mt-5 from-black via-slate-500 to-black bg-gradient-to-r bg-clip-text text-transparent capitalize font-extrabold">
+          {router.query.categoryId}'s
+        </h1>
+        <h1>in stock</h1>
+      </div>
+
+      <div className="grid grid-cols-3 gap-7 h-screen mx-28">
+        {singleCategory.map((product) => (
+          <ProductInfoCard product={product}></ProductInfoCard>
+        ))}
+      </div>
     </div>
   );
 };

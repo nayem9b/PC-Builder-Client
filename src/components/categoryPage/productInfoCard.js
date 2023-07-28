@@ -1,6 +1,7 @@
+import { HeartIcon } from "@/shared/button/HeartIcon/HeartIcon";
 import Link from "next/link";
 import React from "react";
-
+import { Button } from "@nextui-org/react";
 const ProductInfoCard = ({ product }) => {
   console.log(product);
   return (
@@ -16,41 +17,30 @@ const ProductInfoCard = ({ product }) => {
         />
 
         <div class="mt-2">
-          <dl>
+          <div className="flex justify-between">
             <div>
-              <dt class="sr-only">Price</dt>
+              <dd class="text-sm text-gray-500">${product.price}</dd>
 
-              <dd class="text-sm text-gray-500">$240,000</dd>
+              <dd class="font-medium">{product.productName}</dd>
             </div>
 
-            <div>
-              <dt class="sr-only">Address</dt>
-
-              <dd class="font-medium">123 Wallaby Avenue, Park Road</dd>
-            </div>
-          </dl>
+            <Link href={"/pcbuilder"}>
+              <Button
+                auto
+                color="success"
+                icon={<HeartIcon fill="currentColor" filled />}
+              >
+                Add
+              </Button>
+            </Link>
+          </div>
 
           <div class="mt-6 flex items-center gap-8 text-xs">
             <div class="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
-              <svg
-                class="h-4 w-4 text-indigo-700"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
-                />
-              </svg>
-
               <div class="mt-1.5 sm:mt-0">
-                <p class="text-gray-500">Parking</p>
+                <p class="text-gray-500">Category</p>
 
-                <p class="font-medium">2 spaces</p>
+                <p class="font-medium">{product.category}</p>
               </div>
             </div>
 
@@ -71,9 +61,9 @@ const ProductInfoCard = ({ product }) => {
               </svg>
 
               <div class="mt-1.5 sm:mt-0">
-                <p class="text-gray-500">Bathroom</p>
+                <p class="text-gray-500">Rating</p>
 
-                <p class="font-medium">2 rooms</p>
+                <p class="font-medium">{product.rating}</p>
               </div>
             </div>
 
@@ -94,9 +84,9 @@ const ProductInfoCard = ({ product }) => {
               </svg>
 
               <div class="mt-1.5 sm:mt-0">
-                <p class="text-gray-500">Bedroom</p>
+                <p class="text-gray-500">Status</p>
 
-                <p class="font-medium">4 rooms</p>
+                <p class="font-medium">{product.status}</p>
               </div>
             </div>
           </div>
