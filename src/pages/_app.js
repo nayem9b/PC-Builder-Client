@@ -12,13 +12,11 @@ export default function MyApp({ Component, pageProps }) {
   const persistor = persistStore(store);
   return (
     <Provider store={store}>
-      <PersistGate persistor={persistor}>
-        <SessionProvider session={pageProps.session}>
-          <NextUIProvider>
-            {getLayout(<Component {...pageProps} />)}
-          </NextUIProvider>
-        </SessionProvider>
-      </PersistGate>
+      <SessionProvider session={pageProps.session}>
+        <NextUIProvider>
+          {getLayout(<Component {...pageProps} />)}
+        </NextUIProvider>
+      </SessionProvider>
     </Provider>
   );
 }

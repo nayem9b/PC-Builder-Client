@@ -1,6 +1,6 @@
 import React from "react";
 
-const watchCTA = () => {
+const WatchCTA = () => {
   return (
     <div>
       <div class="relative z-20 flex items-center overflow-hidden ">
@@ -43,4 +43,4 @@ const watchCTA = () => {
   );
 };
 
-export default watchCTA;
+export default WatchCTA;

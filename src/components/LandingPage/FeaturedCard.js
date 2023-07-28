@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Col, Row, Button, Text } from "@nextui-org/react";
+import Link from "next/link";
 const FeaturedCard = ({ product }) => {
   console.log(product);
   return (
@@ -13,10 +14,13 @@ const FeaturedCard = ({ product }) => {
               transform="uppercase"
               color="#ffffffAA"
             >
-              New
+              {product?.status}
             </Text>
             <Text h3 color="black">
               {product?.productName}
+            </Text>
+            <Text h4 color="black">
+              ${product?.price}
             </Text>
           </Col>
         </Card.Header>
@@ -42,23 +46,26 @@ const FeaturedCard = ({ product }) => {
           <Row>
             <Col>
               <Text color="#000" size={12}>
-                Available soon.
+                Category: {product?.category}
               </Text>
-              <Text color="#000" size={12}>
-                Get notified.
+              <Text color="#000" size={15}>
+                Rating : {product?.rating}
               </Text>
             </Col>
             <Col>
               <Row justify="flex-end">
                 <Button flat auto rounded color="secondary">
-                  <Text
-                    css={{ color: "inherit" }}
-                    size={12}
-                    weight="bold"
-                    transform="uppercase"
-                  >
-                    Notify Me
-                  </Text>
+                  <Link href={`/productdetails/${product._id}`}>
+                    {" "}
+                    <Text
+                      css={{ color: "inherit" }}
+                      size={12}
+                      weight="bold"
+                      transform="uppercase"
+                    >
+                      View
+                    </Text>
+                  </Link>
                 </Button>
               </Row>
             </Col>

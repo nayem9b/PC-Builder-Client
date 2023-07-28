@@ -4,10 +4,13 @@ import { Button } from "@nextui-org/react";
 import Link from "next/link";
 const Navbar = () => {
   const categories = [
+    { name: "processor", route: "/category/processor" },
     { name: "motherboard", route: "/category/motherboard" },
     { name: "ram", route: "/category/ram" },
-    { name: "processor", route: "/category/processor" },
+    { name: "power supply unit", route: "/category/power" },
+    { name: "storage", route: "/category/storage" },
     { name: "monitor", route: "/category/monitor" },
+    { name: "others", route: "/category/others" },
   ];
   return (
     <div>

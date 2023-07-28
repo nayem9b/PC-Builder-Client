@@ -1,9 +1,15 @@
 import RootLayout from "@/Layouts/RootLayout";
+import { removeFromCart } from "@/redux/features/cart/cartSlice";
 import { Button, Text } from "@nextui-org/react";
+import Link from "next/link";
 
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 
-const pcbuilder = () => {
+const pcbuilder = ({ pcBuilder }) => {
+  const { products } = useSelector((state) => state.builder);
+  console.log(products);
+  const dispatch = useDispatch();
   return (
     <div className="h-screen">
       <Text
@@ -36,9 +42,35 @@ const pcbuilder = () => {
       >
         Prettier
       </Text>
-      <Button flat color="secondary" auto>
-        Primary
-      </Button>
+      {pcBuilder.map((item) => (
+        <div className="">
+          <div className="w-2/6 flex justify-between mx-auto">
+            <p className="text-green-300 -mt-7">{item.itemName}</p>
+            <Link href={item.route}>
+              <Button flat color="secondary" auto>
+                choose
+              </Button>
+            </Link>
+            {products.map((product) => (
+              <div>
+                {product.category === item.itemName && (
+                  <div>
+                    <h1>{product.category}</h1>
+                    <Button
+                      flat
+                      color="error"
+                      auto
+                      onClick={() => dispatch(removeFromCart(product))}
+                    >
+                      Delete
+                    </Button>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
   );
 };

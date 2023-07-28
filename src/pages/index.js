@@ -4,7 +4,7 @@ import FeaturedCategory from "@/components/LandingPage/FeaturedCategory";
 import Link from "next/link";
 import TrustedBy from "@/components/LandingPage/TrustedBy";
 import Testimonial from "@/components/LandingPage/Testimonial";
-import WatchCTA from "@/components/LandingPage/watchCTA";
+import WatchCTA from "@/components/LandingPage/WatchCTA";
 
 export default function HomePage({ featured }) {
   const featuredCategories = [
