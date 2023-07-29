@@ -13,7 +13,7 @@ export default function HomePage({ featured, featuredCategories }) {
       <p className="text-center mb-10 text-5xl lg:text-6xl font-extrabold">
         Featured Products
       </p>
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 mx-5 lg:mx-32">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mx-5 lg:mx-32">
         {featured?.map((product) => (
           <FeaturedCard key={product.image} product={product}></FeaturedCard>
         ))}
@@ -21,7 +21,7 @@ export default function HomePage({ featured, featuredCategories }) {
       <p className="text-center m-10 text-6xl font-extrabold">
         Featured Categories
       </p>
-      <div className="grid grid-cols-1 lg:grid-cols-6 mx-5 lg:mx-32 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 mx-5 lg:mx-32 gap-4">
         {featuredCategories.map((featuredCategory) => (
           <Link href={featuredCategory.route}>
             <FeaturedCategory
@@ -37,9 +37,11 @@ export default function HomePage({ featured, featuredCategories }) {
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch("http://localhost:5000/api/products");
+  const res = await fetch("https://pcbuilderserver.vercel.app/api/products");
   const data = await res.json();
-  const response = await fetch("http://localhost:5000/api/categories");
+  const response = await fetch(
+    "https://pcbuilderserver.vercel.app/api/categories"
+  );
   const featuredCategory = await response.json();
   const selectedData = data.slice(0, 6);
   console.log(featuredCategory);

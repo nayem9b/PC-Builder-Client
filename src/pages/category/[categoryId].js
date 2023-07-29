@@ -22,7 +22,7 @@ const CategoryPage = ({ singleCategory }) => {
         {router.query.categoryId}
       </h1>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 mx-5 lg:mx-28">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mx-5 lg:mx-28">
         {singleCategory.map((product) => (
           <ProductInfoCard product={product}></ProductInfoCard>
         ))}
@@ -37,7 +37,7 @@ CategoryPage.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
 export const getStaticPaths = async () => {
-  const res = await fetch(`http://localhost:5000/api/category`);
+  const res = await fetch(`https://pcbuilderserver.vercel.app/api/category`);
   const categories = await res.json();
   const paths = categories.map((category) => ({
     params: { categoryId: category.category },
@@ -50,7 +50,7 @@ export const getStaticProps = async (context) => {
   const { params } = context;
   console.log(params);
   const res = await fetch(
-    `http://localhost:5000/api/category/${params.categoryId}`
+    `https://pcbuilderserver.vercel.app/api/category/${params.categoryId}`
   );
   const data = await res.json();
   console.log(data);
