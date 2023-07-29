@@ -41,7 +41,7 @@ const Navbar = () => {
             </svg>
             <span class="ml-3 text-xl">Start Tech</span>
           </Link>
-          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+          <nav class="md:ml-auto flex flex-wrap items-center text-base gap-4 justify-center">
             <Dropdown>
               <Dropdown.Button flat>Category</Dropdown.Button>
               <Dropdown.Menu aria-label="Static Actions">

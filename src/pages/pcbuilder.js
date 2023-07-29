@@ -3,11 +3,11 @@ import { removeFromCart } from "@/redux/features/cart/cartSlice";
 import { Button, Text } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
-
+import { getSession } from "next-auth/react";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-const pcbuilder = ({ pcBuilder }) => {
+const pcbuilder = ({ pcBuilder, session }) => {
   const { products } = useSelector((state) => state.builder);
   console.log(products);
   const dispatch = useDispatch();
@@ -15,7 +15,7 @@ const pcbuilder = ({ pcBuilder }) => {
     <div className="h-screen">
       <h1 className="text-center mb-10">PC Builder</h1>
       {pcBuilder.map((item) => (
-        <div className="bg-slate-300 border m-7 p-3 border-red-700">
+        <div className="bg-blue-50 rounded-3xl mx-auto border w-8/12 m-7 p-3 ">
           <div className="w-2/6 flex  justify-between mx-auto ">
             <p className="text-3xl mb-4">{item.itemName}</p>
 
@@ -65,13 +65,23 @@ pcbuilder.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
 
-export const getServerSideProps = async () => {
+export const getServerSideProps = async (context) => {
   const res = await fetch(`http://localhost:5000/api/pcbuilder`);
   const data = await res.json();
+  const session = await getSession(context);
   console.log(data);
+  if (!session) {
+    return {
+      redirect: {
+        destination: "/signin",
+        parmanent: false,
+      },
+    };
+  }
   return {
     props: {
       pcBuilder: data,
+      session: session,
     },
   };
 };
