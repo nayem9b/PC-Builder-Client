@@ -2,6 +2,9 @@ import React from "react";
 import { Dropdown } from "@nextui-org/react";
 import { Button } from "@nextui-org/react";
 import Link from "next/link";
+import { useSession } from "next-auth/react";
+import { Avatar, Grid } from "@nextui-org/react";
+import { signOut } from "next-auth/react";
 const Navbar = () => {
   const categories = [
     { name: "processor", route: "/category/processor" },
@@ -12,6 +15,10 @@ const Navbar = () => {
     { name: "monitor", route: "/category/monitor" },
     { name: "others", route: "/category/others" },
   ];
+
+  const { data: session } = useSession();
+  console.log(session);
+
   return (
     <div>
       <header class="text-gray-600 body-font">
@@ -32,7 +39,7 @@ const Navbar = () => {
             >
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
             </svg>
-            <span class="ml-3 text-xl">Tailblocks</span>
+            <span class="ml-3 text-xl">Start Tech</span>
           </Link>
           <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
             <Dropdown>
@@ -55,24 +62,48 @@ const Navbar = () => {
             <Button shadow color="success" auto>
               <Link href={"/pcbuilder"}> PC Builder </Link>
             </Button>
+            {session ? (
+              <>
+                {" "}
+                {/* <Dropdown>
+                  <Dropdown.Button flat>
+                    <Avatar
+                      size="lg"
+                      src="https://i.pravatar.cc/150?u=a042581f4e25056704b"
+                      color="gradient"
+                      bordered
+                    />
+                  </Dropdown.Button>
+                  <Dropdown.Menu aria-label="Static Actions">
+                    <Dropdown.Item key="new">{session.user.name}</Dropdown.Item>
 
-            <a class="mr-5 hover:text-gray-900">Third Link</a>
-            <a class="mr-5 hover:text-gray-900">Fourth Link</a>
+                    <Dropdown.Item
+                      key="delete"
+                      color="error"
+                      onClick={() => signOut()}
+                    >
+                      Sign out
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown> */}
+                <Button color="error" auto onClick={() => signOut()}>
+                  Sign Out
+                </Button>
+              </>
+            ) : (
+              <>
+                <button
+                  auto
+                  className="bg-black px-3 py-2 rounded-full"
+                  rounded
+                >
+                  <Link href={"/signin"} className="text-white font-medium">
+                    New Here?
+                  </Link>
+                </button>
+              </>
+            )}
           </nav>
-          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-            Button
-            <svg
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="w-4 h-4 ml-1"
-              viewBox="0 0 24 24"
-            >
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </button>
         </div>
       </header>
     </div>
