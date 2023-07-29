@@ -1,6 +1,4 @@
-# PC Bulder Hub
-
-## Website Live Link
+# Project Name: PC Builder Hub
 
 ## Live Link: https://pcbuilderhub.vercel.app
 
@@ -8,7 +6,7 @@
 
 ### Github Links
 
-client-side-Github: https://github.com/nayem9b/PC-Builder-Client
+client-side-Github: https://github.com/nayem9b/PC-Builder-Client  
 server-side-Github: https://github.com/nayem9b/PC-Builder-Server
 
 ### Used Technologies
@@ -25,12 +23,11 @@ server-side-Github: https://github.com/nayem9b/PC-Builder-Server
 
 #### Features
 
-- User Authentication using NEXT AUTH
-- Redux persist to store persistancy of information
-- User can choose different products and navigate throught the app
-- Chosen products informations are stored in pcbuilder page which uses redux
-- Only authenticated users are allowed to visit the pc builder page by loggin in via Next Auth
-- Static and Serverside web pages are created by Next JS
-- All product data is fetched from MongoDB database using getStaticPaths byb Next.js
-
-* Featured products are shown on homepage which redirects to product details
+- User Authentication using NEXT AUTH.
+- Redux persist to store persistancy of information.
+- User can choose different products and navigate throught the app.
+- Chosen products informations are stored in pcbuilder page which uses redux.
+- Only authenticated users are allowed to visit the pc builder page by loggin in via Next Auth.
+- Static and Serverside web pages are created by Next JS.
+- All product data is fetched from MongoDB database using getStaticPaths by Next.js.
+- Featured products are shown on homepage which redirects to product details.
