@@ -52,11 +52,11 @@ const pcbuilder = ({ pcBuilder, session }) => {
 
   const dispatch = useDispatch();
   return (
-    <div className="h-full">
+    <div className="grid grid-cols-1 place-content-center justify-items-center">
       <h1 className="text-center mb-10">PC Builder</h1>
       {pcBuilder.map((item) => (
-        <div className="bg-blue-50 rounded-3xl mx-auto border w-8/12 m-7 p-3 ">
-          <div className="w-2/6 flex  justify-between mx-auto ">
+        <div className="bg-blue-50 rounded-3xl mx-8 border w-11/12 lg:w-5/12 m-5">
+          <div className=" flex justify-between mt-3 mx-3">
             <p className="text-3xl mb-4">{item.itemName}</p>
 
             <Button flat color="secondary" auto>
@@ -66,7 +66,7 @@ const pcbuilder = ({ pcBuilder, session }) => {
           {products.map((product) => (
             <>
               {product.category === item.category && (
-                <div className="w-2/6 flex items-center  justify-between mx-auto">
+                <div className=" flex items-center justify-between mx-3 mb-3">
                   <div className="flex gap-4">
                     <Image
                       src={product.image}

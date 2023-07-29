@@ -7,18 +7,10 @@ import Testimonial from "@/components/LandingPage/Testimonial";
 import WatchCTA from "@/components/LandingPage/WatchCTA";
 
 export default function HomePage({ featured, featuredCategories }) {
-  // const featuredCategories = [
-  //   { name: "Processor", route: "/category/processor" },
-  //   { name: "Ram", route: "/category/ram" },
-  //   { name: "Motherboard", route: "/category/motherboard" },
-  //   { name: "Power Supply Unit", route: "/category/power" },
-  //   { name: "Storage", route: "/category/storage" },
-  //   { name: "Monitor", route: "/category/monitor" },
-  // ];
   return (
     <div>
       <WatchCTA></WatchCTA>
-      <p className="text-center mb-10 text-6xl font-extrabold">
+      <p className="text-center mb-10 text-5xl lg:text-6xl font-extrabold">
         Featured Products
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 mx-5 lg:mx-32">

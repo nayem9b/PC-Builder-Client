@@ -8,13 +8,19 @@ const CategoryPage = ({ singleCategory }) => {
 
   return (
     <div>
-      <div className="text-center justify-center  mt-16 hidden lg:block">
-        <h1>Available</h1>
-        <h1 className="text-6xl p-4 -mt-5 from-black via-slate-500 to-black bg-gradient-to-r bg-clip-text text-transparent capitalize font-extrabold">
-          {router.query.categoryId}'s
-        </h1>
-        <h1>in stock</h1>
+      <div className="hidden lg:block">
+        <div className="text-center justify-center flex mt-16 ">
+          <h1>Available</h1>
+          <h1 className="text-3xl lg:text-6xl p-4 -mt-5 from-black via-slate-500 to-black bg-gradient-to-r bg-clip-text text-transparent capitalize font-extrabold">
+            {router.query.categoryId}'s
+          </h1>
+          <h2>in stock</h2>
+        </div>
       </div>
+
+      <h1 className="capitalize text-center lg:hidden">
+        {router.query.categoryId}
+      </h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 mx-5 lg:mx-28">
         {singleCategory.map((product) => (
