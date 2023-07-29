@@ -9,8 +9,8 @@
     "keyFeatures": [
       { "Model": "Ryzen 3 4100" },
       { "Clock Speed": "3.8GHz; Up to 4.0GHz" },
-      { "L1 Cache": "256KB; L2 Cache: 2MB; L3 Cache: 4MB" },
-      { "CPU Socket": "AM4" }
+      { "L1Cache": "256KB; L2 Cache: 2MB; L3 Cache: 4MB" },
+      { "CPUSocket": "AM4" }
     ]
   },
   {
@@ -63,7 +63,7 @@
       { "Model": "Gigabyte P550B" },
       { "Capacity": "4GB" },
       { "Frequency": "2666MHZ , PIN: 288-pin" },
-      { "Memory Architecture": "x8 FBGA DRAM chip" }
+      { "MemoryArchitecture": "x8 FBGA DRAM chip" }
     ]
   },
   {
@@ -75,9 +75,9 @@
     "rating": 5,
     "keyFeatures": [
       { "Model": "Ryzen 3 4100" },
-      { "Clock Speed": "3.8GHz; Up to 4.0GHz" },
-      { "L1 Cache": "256KB; L2 Cache: 2MB; L3 Cache: 4MB" },
-      { "CPU Socket": "AM4" }
+      { "ClockSpeed": "3.8GHz; Up to 4.0GHz" },
+      { "L1Cache": "256KB; L2 Cache: 2MB; L3 Cache: 4MB" },
+      { "CPUSocket": "AM4" }
     ]
   },
   {
@@ -89,9 +89,9 @@
     "rating": 4.7,
     "keyFeatures": [
       { "Model": "Intel 10th Gen Core i5-10400 Processor" },
-      { "Clock Speed": "3.8GHz; Up to 4.0GHz" },
-      { "L1 Cache": "256KB; L2 Cache: 2MB; L3 Cache: 4MB" },
-      { "CPU Socket": "Intel UHD Graphics 630" }
+      { "ClockSpeed": "3.8GHz; Up to 4.0GHz" },
+      { "L1Cache": "256KB; L2 Cache: 2MB; L3 Cache: 4MB" },
+      { "CPUSocket": "Intel UHD Graphics 630" }
     ]
   },
   {
@@ -103,9 +103,9 @@
     "rating": 4,
     "keyFeatures": [
       { "Model": "Intel 10th Gen Core i5-10400 Processor" },
-      { "Clock Speed": "3.8GHz; Up to 4.0GHz" },
-      { "L1 Cache": "256KB; L2 Cache: 2MB; L3 Cache: 4MB" },
-      { "CPU Socket": "Intel UHD Graphics 630" }
+      { "ClockSpeed": "3.8GHz; Up to 4.0GHz" },
+      { "L1Cache": "256KB; L2 Cache: 2MB; L3 Cache: 4MB" },
+      { "CPUSocket": "Intel UHD Graphics 630" }
     ]
   },
   {
@@ -127,7 +127,7 @@
       { "Model": "Panther Golden 4GB DDR4 2666MHZ" },
       { "Capacity": "4GB" },
       { "Frequency": "2666MHZ , PIN: 288-pin" },
-      { "Memory Architecture": "x8 FBGA DRAM chip" }
+      { "MemoryArchitecture": "x8 FBGA DRAM chip" }
     ]
   },
   {
@@ -141,7 +141,7 @@
       { "Model": "Panther Golden 4GB DDR4 2666MHZ" },
       { "Capacity": "4GB" },
       { "Frequency": "2666MHZ , PIN: 288-pin" },
-      { "Memory Architecture": "x8 FBGA DRAM chip" }
+      { "MemoryArchitecture": "x8 FBGA DRAM chip" }
     ]
   },
   {
@@ -155,7 +155,7 @@
       { "Model": "Panther Golden 4GB DDR4 2666MHZ" },
       { "Capacity": "4GB" },
       { "Frequency": "2666MHZ , PIN: 288-pin" },
-      { "Memory Architecture": "x8 FBGA DRAM chip" }
+      { "MemoryArchitecture": "x8 FBGA DRAM chip" }
     ]
   },
   {
@@ -169,7 +169,7 @@
       { "Model": "Panther Golden 4GB DDR4 2666MHZ" },
       { "Capacity": "4GB" },
       { "Frequency": "2666MHZ , PIN: 288-pin" },
-      { "Memory Architecture": "x8 FBGA DRAM chip" }
+      { "MemoryArchitecture": "x8 FBGA DRAM chip" }
     ]
   },
   {
@@ -183,7 +183,7 @@
       { "Model": "Panther Golden 4GB DDR4 2666MHZ" },
       { "Capacity": "4GB" },
       { "Frequency": "2666MHZ , PIN: 288-pin" },
-      { "Memory Architecture": "x8 FBGA DRAM chip" }
+      { "MemoryArchitecture": "x8 FBGA DRAM chip" }
     ]
   },
   {
@@ -197,7 +197,7 @@
       { "Model": "GA-H81M-S2PH" },
       { "Capacity": "4GB" },
       { "Frequency": "2666MHZ , PIN: 288-pin" },
-      { "Memory Architecture": "x8 FBGA DRAM chip" }
+      { "MemoryArchitecture": "x8 FBGA DRAM chip" }
     ]
   },
   {
@@ -211,7 +211,7 @@
       { "Model": "Panther Golden 4GB DDR4 2666MHZ" },
       { "Capacity": "4GB" },
       { "Frequency": "2666MHZ , PIN: 288-pin" },
-      { "Memory Architecture": "x8 FBGA DRAM chip" }
+      { "MemoryArchitecture": "x8 FBGA DRAM chip" }
     ]
   },
   {
@@ -225,7 +225,7 @@
       { "Model": "Panther Golden 4GB DDR4 2666MHZ" },
       { "Capacity": "4GB" },
       { "Frequency": "2666MHZ , PIN: 288-pin" },
-      { "Memory Architecture": "x8 FBGA DRAM chip" }
+      { "MemoryArchitecture": "x8 FBGA DRAM chip" }
     ]
   },
   {
@@ -239,7 +239,7 @@
       { "Model": "Panther Golden 4GB DDR4 2666MHZ" },
       { "Capacity": "4GB" },
       { "Frequency": "2666MHZ , PIN: 288-pin" },
-      { "Memory Architecture": "x8 FBGA DRAM chip" }
+      { "MemoryArchitecture": "x8 FBGA DRAM chip" }
     ]
   },
   {
@@ -253,7 +253,7 @@
       { "Model": "Panther Golden 4GB DDR4 2666MHZ" },
       { "Capacity": "4GB" },
       { "Frequency": "2666MHZ , PIN: 288-pin" },
-      { "Memory Architecture": "x8 FBGA DRAM chip" }
+      { "MemoryArchitecture": "x8 FBGA DRAM chip" }
     ]
   },
   {
@@ -267,7 +267,7 @@
       { "Model": "Gigabyte P450B" },
       { "Capacity": "4GB" },
       { "Frequency": "2666MHZ , PIN: 288-pin" },
-      { "Memory Architecture": "x8 FBGA DRAM chip" }
+      { "MemoryArchitecture": "x8 FBGA DRAM chip" }
     ]
   },
   {
@@ -281,7 +281,7 @@
       { "Model": "Antec Atom 550W" },
       { "Capacity": "4GB" },
       { "Frequency": "2666MHZ , PIN: 288-pin" },
-      { "Memory Architecture": "x8 FBGA DRAM chip" }
+      { "MemoryArchitecture": "x8 FBGA DRAM chip" }
     ]
   },
   {
@@ -295,7 +295,7 @@
       { "Model": "CUPRUM STRIKE CSK 450W" },
       { "Capacity": "4GB" },
       { "Frequency": "2666MHZ , PIN: 288-pin" },
-      { "Memory Architecture": "x8 FBGA DRAM chip" }
+      { "MemoryArchitecture": "x8 FBGA DRAM chip" }
     ]
   },
   {
@@ -309,7 +309,7 @@
       { "Model": "Cooler Master MWE 450W V2" },
       { "Capacity": "4GB" },
       { "Frequency": "2666MHZ , PIN: 288-pin" },
-      { "Memory Architecture": "x8 FBGA DRAM chip" }
+      { "MemoryArchitecture": "x8 FBGA DRAM chip" }
     ]
   },
 
