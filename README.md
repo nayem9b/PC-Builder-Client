@@ -1,4 +1,4 @@
-# Project Name: PC Builder Hub
+# PC Builder Hub
 
 ## Live Link: https://pcbuilderhub.vercel.app
 
@@ -6,8 +6,8 @@
 
 ### Github Links
 
-client-side-Github: https://github.com/nayem9b/PC-Builder-Client  
-server-side-Github: https://github.com/nayem9b/PC-Builder-Server
+Client Side Github: https://github.com/nayem9b/PC-Builder-Client  
+Server Side Github: https://github.com/nayem9b/PC-Builder-Server
 
 ### Used Technologies
 
