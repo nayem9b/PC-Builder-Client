@@ -13,18 +13,14 @@ const ProductInfoCard = ({ product }) => {
     router.push("/pcbuilder");
   };
   return (
-    <div>
+    <div className="border rounded-2xl">
       <Link
         href={`/productdetails/${product._id}`}
-        class="block rounded-lg p-4 shadow-sm shadow-indigo-100"
+        class="block  p-4 shadow-sm shadow-indigo-100"
       >
-        <img
-          alt="Home"
-          src={product?.image}
-          class="h-56 w-full rounded-md object-cover"
-        />
+        <img alt="Home" src={product?.image} class=" object-contain" />
       </Link>
-      <div class="mt-2">
+      <div class="mt-2 ml-5">
         <div className="flex justify-between">
           <div>
             <dd class="text-sm text-gray-500">${product.price}</dd>
@@ -37,12 +33,13 @@ const ProductInfoCard = ({ product }) => {
             color="success"
             icon={<HeartIcon fill="currentColor" filled />}
             onClick={handleAddToBuilder}
+            className="mr-3"
           >
             Add to builder
           </Button>
         </div>
 
-        <div class="mt-6 flex items-center gap-8 text-xs">
+        <div class="mt-3 mb-3 flex items-center gap-8 text-xs">
           <div class="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
             <div class="mt-1.5 sm:mt-0">
               <p class="text-gray-500">Category</p>

@@ -21,7 +21,7 @@ export default function HomePage({ featured, featuredCategories }) {
       <p className="text-center mb-10 text-6xl font-extrabold">
         Featured Products
       </p>
-      <div className="grid grid-cols-4 gap-4 mx-32">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 mx-5 lg:mx-32">
         {featured?.map((product) => (
           <FeaturedCard key={product.image} product={product}></FeaturedCard>
         ))}
@@ -29,7 +29,7 @@ export default function HomePage({ featured, featuredCategories }) {
       <p className="text-center m-10 text-6xl font-extrabold">
         Featured Categories
       </p>
-      <div className="grid grid-cols-6 mx-32 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-6 mx-5 lg:mx-32 gap-4">
         {featuredCategories.map((featuredCategory) => (
           <Link href={featuredCategory.route}>
             <FeaturedCategory

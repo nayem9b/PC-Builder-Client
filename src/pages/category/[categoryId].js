@@ -8,7 +8,7 @@ const CategoryPage = ({ singleCategory }) => {
 
   return (
     <div>
-      <div className="text-center justify-center flex mt-16">
+      <div className="text-center justify-center  mt-16 hidden lg:block">
         <h1>Available</h1>
         <h1 className="text-6xl p-4 -mt-5 from-black via-slate-500 to-black bg-gradient-to-r bg-clip-text text-transparent capitalize font-extrabold">
           {router.query.categoryId}'s
@@ -16,7 +16,7 @@ const CategoryPage = ({ singleCategory }) => {
         <h1>in stock</h1>
       </div>
 
-      <div className="grid grid-cols-3 gap-7 h-screen mx-28">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 mx-5 lg:mx-28">
         {singleCategory.map((product) => (
           <ProductInfoCard product={product}></ProductInfoCard>
         ))}

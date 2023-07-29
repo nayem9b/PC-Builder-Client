@@ -2,6 +2,7 @@ import store from "@/redux/store";
 import "@/styles/globals.css";
 import { NextUIProvider } from "@nextui-org/react";
 import { SessionProvider } from "next-auth/react";
+import { Toaster } from "react-hot-toast";
 import { Provider } from "react-redux";
 import { persistStore } from "redux-persist";
 import { PersistGate } from "redux-persist/integration/react";
@@ -15,6 +16,7 @@ export default function MyApp({ Component, pageProps }) {
       <SessionProvider session={pageProps.session}>
         <NextUIProvider>
           {getLayout(<Component {...pageProps} />)}
+          <Toaster />
         </NextUIProvider>
       </SessionProvider>
     </Provider>
