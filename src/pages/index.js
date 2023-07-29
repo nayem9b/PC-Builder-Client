@@ -10,17 +10,26 @@ export default function HomePage({ featured }) {
   const featuredCategories = [
     { name: "Processor", route: "/category/processor" },
     { name: "Ram", route: "/category/ram" },
+    { name: "Motherboard", route: "/category/motherboard" },
+    { name: "Power Supply Unit", route: "/category/power" },
+    { name: "Storage", route: "/category/storage" },
     { name: "Monitor", route: "/category/monitor" },
   ];
   return (
     <div>
       <WatchCTA></WatchCTA>
-      <div className="grid grid-cols-3 gap-4">
+      <p className="text-center mb-10 text-6xl font-extrabold">
+        Featured Products
+      </p>
+      <div className="grid grid-cols-4 gap-4 mx-32">
         {featured?.map((product) => (
           <FeaturedCard key={product.image} product={product}></FeaturedCard>
         ))}
       </div>
-      <div className="grid grid-cols-4">
+      <p className="text-center m-10 text-6xl font-extrabold">
+        Featured Categories
+      </p>
+      <div className="grid grid-cols-6 mx-32 gap-4">
         {featuredCategories.map((featuredCategory) => (
           <Link href={featuredCategory.route}>
             <FeaturedCategory
@@ -38,11 +47,11 @@ export default function HomePage({ featured }) {
 export const getStaticProps = async () => {
   const res = await fetch("http://localhost:5000/api/products");
   const data = await res.json();
-  const selectedData = data.slice(0, 3);
+  const selectedData = data.slice(0, 6);
   console.log("selectedData:", selectedData);
   return {
     props: {
-      featured: data,
+      featured: selectedData,
     },
   };
 };

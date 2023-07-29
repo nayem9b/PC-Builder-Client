@@ -2,7 +2,6 @@ import React from "react";
 import { Card, Col, Row, Button, Text } from "@nextui-org/react";
 import Link from "next/link";
 const FeaturedCard = ({ product }) => {
-  console.log(product);
   return (
     <div>
       <Card css={{ w: "100%", h: "400px" }}>

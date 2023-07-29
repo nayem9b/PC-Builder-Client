@@ -1,6 +1,7 @@
 import RootLayout from "@/Layouts/RootLayout";
 import { removeFromCart } from "@/redux/features/cart/cartSlice";
 import { Button, Text } from "@nextui-org/react";
+import Image from "next/image";
 import Link from "next/link";
 
 import React from "react";
@@ -12,63 +13,46 @@ const pcbuilder = ({ pcBuilder }) => {
   const dispatch = useDispatch();
   return (
     <div className="h-screen">
-      <Text
-        h1
-        size={60}
-        css={{
-          textGradient: "45deg, $blue600 -20%, $pink600 50%",
-        }}
-        weight="bold"
-      >
-        Let's
-      </Text>
-      <Text
-        h1
-        size={60}
-        css={{
-          textGradient: "45deg, $purple600 -20%, $pink600 100%",
-        }}
-        weight="bold"
-      >
-        Make the Web
-      </Text>
-      <Text
-        h1
-        size={60}
-        css={{
-          textGradient: "45deg, $yellow600 -20%, $red600 100%",
-        }}
-        weight="bold"
-      >
-        Prettier
-      </Text>
+      <h1 className="text-center mb-10">PC Builder</h1>
       {pcBuilder.map((item) => (
-        <div className="">
-          <div className="w-2/6 flex justify-between mx-auto">
-            <p className="text-green-300 -mt-7">{item.itemName}</p>
-            <Link href={item.route}>
-              <Button flat color="secondary" auto>
-                choose
-              </Button>
-            </Link>
-            {products.map((product) => (
-              <div>
-                {product.category === item.itemName && (
-                  <div>
-                    <h1>{product.category}</h1>
-                    <Button
-                      flat
-                      color="error"
-                      auto
-                      onClick={() => dispatch(removeFromCart(product))}
-                    >
-                      Delete
-                    </Button>
-                  </div>
-                )}
-              </div>
-            ))}
+        <div className="bg-slate-300 border m-7 p-3 border-red-700">
+          <div className="w-2/6 flex  justify-between mx-auto ">
+            <p className="text-3xl mb-4">{item.itemName}</p>
+
+            <Button flat color="secondary" auto>
+              <Link href={item.route}> Choose</Link>
+            </Button>
           </div>
+          {products.map((product) => (
+            <>
+              {product.category === item.itemName && (
+                <div className="w-2/6 flex items-center  justify-between mx-auto">
+                  <div className="flex gap-4">
+                    <Image
+                      src={product.image}
+                      height={60}
+                      width={80}
+                      alt="image"
+                    ></Image>
+                    <div className="flex items-center">
+                      <div>
+                        <p>{product.category}</p>
+                        <p>${product.price}</p>
+                      </div>
+                    </div>
+                  </div>
+                  <Button
+                    flat
+                    color="error"
+                    auto
+                    onClick={() => dispatch(removeFromCart(product))}
+                  >
+                    Delete
+                  </Button>
+                </div>
+              )}
+            </>
+          ))}
         </div>
       ))}
     </div>
