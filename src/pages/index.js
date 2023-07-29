@@ -6,15 +6,15 @@ import TrustedBy from "@/components/LandingPage/TrustedBy";
 import Testimonial from "@/components/LandingPage/Testimonial";
 import WatchCTA from "@/components/LandingPage/WatchCTA";
 
-export default function HomePage({ featured }) {
-  const featuredCategories = [
-    { name: "Processor", route: "/category/processor" },
-    { name: "Ram", route: "/category/ram" },
-    { name: "Motherboard", route: "/category/motherboard" },
-    { name: "Power Supply Unit", route: "/category/power" },
-    { name: "Storage", route: "/category/storage" },
-    { name: "Monitor", route: "/category/monitor" },
-  ];
+export default function HomePage({ featured, featuredCategories }) {
+  // const featuredCategories = [
+  //   { name: "Processor", route: "/category/processor" },
+  //   { name: "Ram", route: "/category/ram" },
+  //   { name: "Motherboard", route: "/category/motherboard" },
+  //   { name: "Power Supply Unit", route: "/category/power" },
+  //   { name: "Storage", route: "/category/storage" },
+  //   { name: "Monitor", route: "/category/monitor" },
+  // ];
   return (
     <div>
       <WatchCTA></WatchCTA>
@@ -47,11 +47,14 @@ export default function HomePage({ featured }) {
 export const getStaticProps = async () => {
   const res = await fetch("http://localhost:5000/api/products");
   const data = await res.json();
+  const response = await fetch("http://localhost:5000/api/categories");
+  const featuredCategory = await response.json();
   const selectedData = data.slice(0, 6);
-  console.log("selectedData:", selectedData);
+  console.log(featuredCategory);
   return {
     props: {
       featured: selectedData,
+      featuredCategories: featuredCategory,
     },
   };
 };

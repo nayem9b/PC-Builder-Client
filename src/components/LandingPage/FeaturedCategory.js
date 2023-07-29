@@ -11,16 +11,14 @@ const FeaturedCategory = ({ featuredCategory }) => {
               weight="bold"
               transform="uppercase"
               color="#ffffffAA"
-            >
-              Plant a tree
-            </Text>
+            ></Text>
             <Text h4 color="white">
               {featuredCategory.name}
             </Text>
           </Col>
         </Card.Header>
         <Card.Image
-          src="https://nextui.org/images/card-example-3.jpeg"
+          src={featuredCategory.image}
           width="100%"
           height={340}
           objectFit="cover"

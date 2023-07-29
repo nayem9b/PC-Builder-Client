@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Processor",
+    "route": "/category/processor",
+    "image": "https://images.unsplash.com/photo-1600348759986-dc35c2ec7743?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+  },
+  {
+    "name": "Ram",
+    "route": "/category/ram",
+    "image": "https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+  },
+  {
+    "name": "Motherboard",
+    "route": "/category/motherboard",
+    "image": "https://images.unsplash.com/photo-1613483187636-c2024013d54a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+  },
+  {
+    "name": "Power Supply Unit",
+    "route": "/category/power",
+    "image": "https://images.unsplash.com/photo-1675954031909-ead493243be8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+  },
+  {
+    "name": "Storage",
+    "route": "/category/storage",
+    "image": "https://www.servermania.com/kb/images/f_webp,q_auto:best/v1681843357/kb/Featured-1/Featured-1.webp?_i=AA"
+  },
+  {
+    "name": "Monitor",
+    "route": "/category/monitor",
+    "image": "https://images.unsplash.com/photo-1585792180666-f7347c490ee2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1177&q=80"
+  },
+  {
+    "name": "Others",
+    "route": "/category/others",
+    "image": "https://images.unsplash.com/photo-1550009158-9ebf69173e03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1201&q=80"
+  }
+]

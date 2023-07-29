@@ -1,74 +1,486 @@
 [
   {
-    "productName": "abc",
-    "image": "gg",
-    "category": "Mouse",
-    "price": 100,
+    "productName": "AMD Ryzen 3 4100 Processor",
+    "image": "https://www.startech.com.bd/image/cache/catalog/processor/AMD/ryzen-3-4100/amd-ryzen-3-4100-01-500x500.jpg",
+    "category": "processor",
+    "price": 10300,
     "status": "In Stock",
-    "rating": 4.5
+    "rating": 4.5,
+    "keyFeatures": [
+      { "Model": "Ryzen 3 4100" },
+      { "Clock Speed": "3.8GHz; Up to 4.0GHz" },
+      { "L1 Cache": "256KB; L2 Cache: 2MB; L3 Cache: 4MB" },
+      { "CPU Socket": "AM4" }
+    ]
   },
   {
-    "productName": "abc",
-    "image": "gg",
-    "category": "Processor",
-    "price": 100,
+    "productName": "Xiaomi Redmi RMMNT215NF 21.45 FHD Monitor",
+    "image": "https://www.startech.com.bd/image/cache/catalog/monitor/xiaomi/rmmnt215nf/rmmnt215nf-01-500x500.jpg",
+    "category": "monitor",
+    "price": 8100,
     "status": "In Stock",
-    "rating": 4.5
+    "rating": 5,
+    "keyFeatures": [
+      { "Model": "Redmi RMMNT215NF" },
+      { "Resolution": "FHD (1920 x 1080)" },
+      { "Ports": "HDMI, VGA" }
+    ]
   },
   {
-    "productName": "abc",
-    "image": "gg",
-    "category": "Monitor",
-    "price": 100,
+    "productName": "MICE KM-760 RGB Gaming Keyboard and Mouse Combo",
+    "image": "https://www.startech.com.bd/image/cache/catalog/keyboard/imice/km-760/km-760-01-500x500.webp",
+    "category": "others",
+    "price": 1300,
     "status": "In Stock",
-    "rating": 4.5
+    "rating": 5,
+    "keyFeatures": [
+      { "Model": "KM-760" },
+      { "Resolution": "FHD (1920 x 1080)" },
+      { "Ports": "HDMI, VGA" }
+    ]
   },
   {
-    "productName": "abc",
-    "image": "gg",
+    "productName": "TEAM CX1 240GB 2.5 SATA SSD",
+    "image": "https://www.startech.com.bd/image/cache/catalog/ssd/team/cx1/cx1-01-500x500.jpg",
+    "category": "storage",
+    "price": 1875,
+    "status": "Out of stock",
+    "rating": 4.5,
+    "keyFeatures": [
+      { "Model": "TEAM CX1 240GB 2.5 SATA SSD" },
+      { "Capacity": "120GB" },
+      { "Frequency": "500 MB/s, Write: 360 MB/s" }
+    ]
+  },
+  {
+    "productName": "Gigabyte P550B 550W 80 Plus Bronze Certified Power Supply",
+    "image": "https://www.startech.com.bd/image/cache/catalog/power-supply/gigabyte/p550b/p550b-500x500.jpg",
+    "category": "power",
+    "price": 4400,
+    "status": "Out of stock",
+    "rating": 5,
+    "keyFeatures": [
+      { "Model": "Gigabyte P550B" },
+      { "Capacity": "4GB" },
+      { "Frequency": "2666MHZ , PIN: 288-pin" },
+      { "Memory Architecture": "x8 FBGA DRAM chip" }
+    ]
+  },
+  {
+    "productName": "AMD Ryzen 5 4600G Processor with Radeon Graphics",
+    "image": "https://www.startech.com.bd/image/cache/catalog/processor/amd/ryzen-5-4600g/ryzen-5-4600g-500x500.jpg",
+    "category": "processor",
+    "price": 12000,
+    "status": "In Stock",
+    "rating": 5,
+    "keyFeatures": [
+      { "Model": "Ryzen 3 4100" },
+      { "Clock Speed": "3.8GHz; Up to 4.0GHz" },
+      { "L1 Cache": "256KB; L2 Cache: 2MB; L3 Cache: 4MB" },
+      { "CPU Socket": "AM4" }
+    ]
+  },
+  {
+    "productName": "Intel 10th Gen Core i5-10400 Processor",
+    "image": "https://www.startech.com.bd/image/cache/catalog/processor/Intel/i5-10400/i5-10400-1-500x500.jpg",
+    "category": "processor",
+    "price": 14200,
+    "status": "In Stock",
+    "rating": 4.7,
+    "keyFeatures": [
+      { "Model": "Intel 10th Gen Core i5-10400 Processor" },
+      { "Clock Speed": "3.8GHz; Up to 4.0GHz" },
+      { "L1 Cache": "256KB; L2 Cache: 2MB; L3 Cache: 4MB" },
+      { "CPU Socket": "Intel UHD Graphics 630" }
+    ]
+  },
+  {
+    "productName": "Intel 13th Gen Core i3-13100F Raptor Lake Processor",
+    "image": "https://www.startech.com.bd/image/cache/catalog/processor/intel/core-i3-13100/core-i3-13100-01-500x500.webp",
+    "category": "processor",
+    "price": 14200,
+    "status": "In Stock",
+    "rating": 4,
+    "keyFeatures": [
+      { "Model": "Intel 10th Gen Core i5-10400 Processor" },
+      { "Clock Speed": "3.8GHz; Up to 4.0GHz" },
+      { "L1 Cache": "256KB; L2 Cache: 2MB; L3 Cache: 4MB" },
+      { "CPU Socket": "Intel UHD Graphics 630" }
+    ]
+  },
+  {
+    "productName": "Intel Pentium Gold G6405 Coffee Lake Processor",
+    "image": "https://www.startech.com.bd/image/cache/catalog/processor/Intel/pentium-gold-g6405/pentium-gold-g6405-01-500x500.webp",
+    "category": "processor",
+    "price": 7000,
+    "status": "In Stock",
+    "rating": 3.7
+  },
+  {
+    "productName": "Apacer Panther Golden 4GB DDR4 2666MHZ Desktop RAM",
+    "image": "https://www.startech.com.bd/image/cache/catalog/ram/apacer/panther-golden-4gb-ddr4-2666mhz/panther-golden-4gb-ddr4-2666mhz-01-500x500.jpg",
     "category": "ram",
-    "price": 100,
+    "price": 1750,
     "status": "In Stock",
-    "rating": 4.5
+    "rating": 4.5,
+    "keyFeatures": [
+      { "Model": "Panther Golden 4GB DDR4 2666MHZ" },
+      { "Capacity": "4GB" },
+      { "Frequency": "2666MHZ , PIN: 288-pin" },
+      { "Memory Architecture": "x8 FBGA DRAM chip" }
+    ]
   },
   {
-    "productName": "abc",
-    "image": "gg",
-    "category": "Monitor",
-    "price": 100,
-    "status": "In Stock",
-    "rating": 4.5
-  },
-  {
-    "productName": "abc",
-    "image": "gg",
+    "productName": "Team Elite Plus Red 16GB 3200MHz DDR4 U-DIMM Desktop RAM",
+    "image": "https://www.startech.com.bd/image/cache/catalog/ram/team/elite-plus-red/elite-plus-red-02-500x500.webp",
     "category": "ram",
-    "price": 100,
+    "price": 4075,
     "status": "In Stock",
-    "rating": 4.5
+    "rating": 5,
+    "keyFeatures": [
+      { "Model": "Panther Golden 4GB DDR4 2666MHZ" },
+      { "Capacity": "4GB" },
+      { "Frequency": "2666MHZ , PIN: 288-pin" },
+      { "Memory Architecture": "x8 FBGA DRAM chip" }
+    ]
   },
   {
-    "productName": "abc",
-    "image": "gg",
-    "category": "Monitor",
-    "price": 100,
-    "status": "In Stock",
-    "rating": 4.5
-  },
-  {
-    "productName": "abc",
-    "image": "gg",
+    "productName": "Kingston FURY Beast 8GB 3200MHz DDR4 Desktop RAM",
+    "image": "https://www.startech.com.bd/image/cache/catalog/ram/kingston/fury-beast/fury-beast-01-500x500.jpg",
     "category": "ram",
-    "price": 100,
+    "price": 2350,
     "status": "In Stock",
-    "rating": 4.5
+    "rating": 5,
+    "keyFeatures": [
+      { "Model": "Panther Golden 4GB DDR4 2666MHZ" },
+      { "Capacity": "4GB" },
+      { "Frequency": "2666MHZ , PIN: 288-pin" },
+      { "Memory Architecture": "x8 FBGA DRAM chip" }
+    ]
   },
   {
-    "productName": "abc",
-    "image": "gg",
-    "category": "Monitor",
-    "price": 100,
+    "productName": "Geil Evo Spear 4GB DDR4 2666 MHz Ram",
+    "image": "https://www.startech.com.bd/image/cache/catalog/Component/Ram/Geil/evo%204gb-500x500.jpg",
+    "category": "ram",
+    "price": 2400,
     "status": "In Stock",
-    "rating": 4.5
+    "rating": 5,
+    "keyFeatures": [
+      { "Model": "Panther Golden 4GB DDR4 2666MHZ" },
+      { "Capacity": "4GB" },
+      { "Frequency": "2666MHZ , PIN: 288-pin" },
+      { "Memory Architecture": "x8 FBGA DRAM chip" }
+    ]
+  },
+  {
+    "productName": "TwinMOS 4GB 3200MHz DDR4 U-DIMM Desktop RAM",
+    "image": "https://www.startech.com.bd/image/cache/catalog/ram/twinmos/8gb-3200mhz/8gb-3200mhz-500x500.jpg",
+    "category": "ram",
+    "price": 2000,
+    "status": "Out of stock",
+    "rating": 5,
+    "keyFeatures": [
+      { "Model": "Panther Golden 4GB DDR4 2666MHZ" },
+      { "Capacity": "4GB" },
+      { "Frequency": "2666MHZ , PIN: 288-pin" },
+      { "Memory Architecture": "x8 FBGA DRAM chip" }
+    ]
+  },
+  {
+    "productName": "Gigabyte GA-H81M-S2PH Micro ATX Motherboard",
+    "image": "https://www.startech.com.bd/image/cache/catalog/motherboard/gigabyte/ga-h81m-s2ph/ga-h81m-s2ph-500x500.jpg",
+    "category": "motherboard",
+    "price": 7900,
+    "status": "Out of stock",
+    "rating": 5,
+    "keyFeatures": [
+      { "Model": "GA-H81M-S2PH" },
+      { "Capacity": "4GB" },
+      { "Frequency": "2666MHZ , PIN: 288-pin" },
+      { "Memory Architecture": "x8 FBGA DRAM chip" }
+    ]
+  },
+  {
+    "productName": "ASRock H81M-VG4 R4.0 4th Gen Micro ATX Motherboard",
+    "image": "https://www.startech.com.bd/image/cache/catalog/motherboard/asrock/h81m-vg4-r4-0/h81m-vg4-r4-0-01-500x500.jpg",
+    "category": "motherboard",
+    "price": 8000,
+    "status": "In Stock",
+    "rating": 5,
+    "keyFeatures": [
+      { "Model": "Panther Golden 4GB DDR4 2666MHZ" },
+      { "Capacity": "4GB" },
+      { "Frequency": "2666MHZ , PIN: 288-pin" },
+      { "Memory Architecture": "x8 FBGA DRAM chip" }
+    ]
+  },
+  {
+    "productName": "Asus H81M-K 4th Gen Motherboard",
+    "image": "https://www.startech.com.bd/image/cache/catalog/motherboard/asus/h81m-k/h81m-k-01-500x500.jpg",
+    "category": "motherboard",
+    "price": 8900,
+    "status": "In Stock",
+    "rating": 4.5,
+    "keyFeatures": [
+      { "Model": "Panther Golden 4GB DDR4 2666MHZ" },
+      { "Capacity": "4GB" },
+      { "Frequency": "2666MHZ , PIN: 288-pin" },
+      { "Memory Architecture": "x8 FBGA DRAM chip" }
+    ]
+  },
+  {
+    "productName": "MSI A520M-A Pro AM4 AMD Micro-ATX Motherboard",
+    "image": "https://www.startech.com.bd/image/cache/catalog/motherboard/msi/a520m-a-pro/a520m-a-pro-500x500.jpg",
+    "category": "motherboard",
+    "price": 8500,
+    "status": "In Stock",
+    "rating": 5,
+    "keyFeatures": [
+      { "Model": "Panther Golden 4GB DDR4 2666MHZ" },
+      { "Capacity": "4GB" },
+      { "Frequency": "2666MHZ , PIN: 288-pin" },
+      { "Memory Architecture": "x8 FBGA DRAM chip" }
+    ]
+  },
+  {
+    "productName": "Gigabyte GA-H110M-DS2 Micro ATX Motherboard",
+    "image": "https://www.startech.com.bd/image/cache/catalog/motherboard/gigabyte/ga-h110m-ds2/ga-h110m-ds2-1-500x500.jpg",
+    "category": "motherboard",
+    "price": 8800,
+    "status": "In Stock",
+    "rating": 5,
+    "keyFeatures": [
+      { "Model": "Panther Golden 4GB DDR4 2666MHZ" },
+      { "Capacity": "4GB" },
+      { "Frequency": "2666MHZ , PIN: 288-pin" },
+      { "Memory Architecture": "x8 FBGA DRAM chip" }
+    ]
+  },
+  {
+    "productName": "Gigabyte P450B 450W 80 Plus Bronze Certified Power Supply",
+    "image": "https://www.startech.com.bd/image/cache/catalog/power-supply/gigabyte/p450b/p450b-500x500.jpg",
+    "category": "power",
+    "price": 3600,
+    "status": "In Stock",
+    "rating": 5,
+    "keyFeatures": [
+      { "Model": "Gigabyte P450B" },
+      { "Capacity": "4GB" },
+      { "Frequency": "2666MHZ , PIN: 288-pin" },
+      { "Memory Architecture": "x8 FBGA DRAM chip" }
+    ]
+  },
+  {
+    "productName": "Antec Atom 550W 550 Watt Power Supply",
+    "image": "https://www.startech.com.bd/image/cache/catalog/power-supply/antec/antec-atom/antec-atom-01-500x500.jpg",
+    "category": "power",
+    "price": 3650,
+    "status": "In Stock",
+    "rating": 4.5,
+    "keyFeatures": [
+      { "Model": "Antec Atom 550W" },
+      { "Capacity": "4GB" },
+      { "Frequency": "2666MHZ , PIN: 288-pin" },
+      { "Memory Architecture": "x8 FBGA DRAM chip" }
+    ]
+  },
+  {
+    "productName": "Antec CUPRUM STRIKE CSK 450W 80 Plus Bronze Power Supply",
+    "image": "https://www.startech.com.bd/image/cache/catalog/power-supply/antec/csk-450/csk-450-bronze-01-500x500.jpg",
+    "category": "power",
+    "price": 4300,
+    "status": "In Stock",
+    "rating": 4,
+    "keyFeatures": [
+      { "Model": "CUPRUM STRIKE CSK 450W" },
+      { "Capacity": "4GB" },
+      { "Frequency": "2666MHZ , PIN: 288-pin" },
+      { "Memory Architecture": "x8 FBGA DRAM chip" }
+    ]
+  },
+  {
+    "productName": "Cooler Master MWE 450W V2 Non-Modular 80 Plus Bronze Power Supply",
+    "image": "https://www.startech.com.bd/image/cache/catalog/power-supply/cooler-master/mwe-450w-v2/mwe-450w-v2-500x500.jpg",
+    "category": "power",
+    "price": 4400,
+    "status": "In Stock",
+    "rating": 5,
+    "keyFeatures": [
+      { "Model": "Cooler Master MWE 450W V2" },
+      { "Capacity": "4GB" },
+      { "Frequency": "2666MHZ , PIN: 288-pin" },
+      { "Memory Architecture": "x8 FBGA DRAM chip" }
+    ]
+  },
+
+  {
+    "productName": "MSI SPATIUM S270 120GB 2.5-Inch SATAIII SSD",
+    "image": "https://www.startech.com.bd/image/cache/catalog/ssd/msi/spatium-s270/spatium-s270-01-500x500.webp",
+    "category": "storage",
+    "price": 1750,
+    "status": "Out of stock",
+    "rating": 4.5,
+    "keyFeatures": [
+      { "Model": "SPATIUM S270" },
+      { "Capacity": "120GB" },
+      { "Frequency": "500 MB/s, Write: 360 MB/s" }
+    ]
+  },
+  {
+    "productName": "Kingston A400 120GB 2.5 inch SATA 3 Internal SSD",
+    "image": "https://www.startech.com.bd/image/cache/catalog/ssd/kingston/a400-sata3-120gb/kingston-a400-120gb-2-5-inch-sata-3-internal-ssd-01-500x500.jpg",
+    "category": "storage",
+    "price": 1600,
+    "status": "In Stock",
+    "rating": 4.5,
+    "keyFeatures": [
+      { "Model": "A400 120GB 2.5 inch SATA 3 Internal SSD" },
+      { "Capacity": "120GB" },
+      { "Frequency": "500 MB/s, Write: 360 MB/s" }
+    ]
+  },
+  {
+    "productName": "TEAM CX1 240GB 2.5 SATA SSD",
+    "image": "https://www.startech.com.bd/image/cache/catalog/ssd/team/cx1/cx1-01-500x500.jpg",
+    "category": "storage",
+    "price": 1875,
+    "status": "Out of stock",
+    "rating": 4.5,
+    "keyFeatures": [
+      { "Model": "TEAM CX1 240GB 2.5 SATA SSD" },
+      { "Capacity": "120GB" },
+      { "Frequency": "500 MB/s, Write: 360 MB/s" }
+    ]
+  },
+  {
+    "productName": "TwinMOS 128GB M.2 2280 SATAIII SSD",
+    "image": "https://www.startech.com.bd/image/cache/catalog/ssd/twinmos/128gb-m-2-2280-sataiii-ssd/128gb-m-2-2280-sataiii-ssd-01-500x500.webp",
+    "category": "storage",
+    "price": 1600,
+    "status": "In Stock",
+    "rating": 4.5,
+    "keyFeatures": [
+      { "Model": "SPATIUM S270" },
+      { "Capacity": "120GB" },
+      { "Frequency": "500 MB/s, Write: 360 MB/s" }
+    ]
+  },
+  {
+    "productName": "HP S700 120GB 2.5 SSD (Solid State Drive)",
+    "image": "https://www.startech.com.bd/image/cache/catalog/ssd/hp-ssd/s700-500x500.jpg",
+    "category": "storage",
+    "price": 1500,
+    "status": "In Stock",
+    "rating": 5,
+    "keyFeatures": [
+      { "Model": "HP S700 120GB" },
+      { "Capacity": "120GB" },
+      { "Frequency": "500 MB/s, Write: 360 MB/s" }
+    ]
+  },
+  {
+    "productName": "Xiaomi Redmi RMMNT215NF 21.45 FHD Monitor",
+    "image": "https://www.startech.com.bd/image/cache/catalog/monitor/xiaomi/rmmnt215nf/rmmnt215nf-01-500x500.jpg",
+    "category": "monitor",
+    "price": 8100,
+    "status": "In Stock",
+    "rating": 5,
+    "keyFeatures": [
+      { "Model": "Redmi RMMNT215NF" },
+      { "Resolution": "FHD (1920 x 1080)" },
+      { "Ports": "HDMI, VGA" }
+    ]
+  },
+  {
+    "productName": "Dahua DHI-LM22-C201 21.45 FHD 75Hz IPS Monitor",
+    "image": "https://www.startech.com.bd/image/cache/catalog/monitor/dahua/dhi-lm22-c201/dhi-lm22-c201-500x500.webp",
+    "category": "monitor",
+    "price": 9700,
+    "status": "In Stock",
+    "rating": 5,
+    "keyFeatures": [
+      { "Model": "DHI-LM22-C201" },
+      { "Resolution": "FHD (1920 x 1080)" },
+      { "Ports": "HDMI, VGA" }
+    ]
+  },
+  {
+    "productName": "Xiaomi Redmi RMMNT215NF 21.45 FHD Monitor",
+    "image": "https://www.startech.com.bd/image/cache/catalog/monitor/xiaomi/rmmnt215nf/rmmnt215nf-01-500x500.jpg",
+    "category": "monitor",
+    "price": 8100,
+    "status": "In Stock",
+    "rating": 5,
+    "keyFeatures": [
+      { "Model": "Redmi RMMNT215NF" },
+      { "Resolution": "FHD (1920 x 1080)" },
+      { "Ports": "HDMI, VGA" }
+    ]
+  },
+  {
+    "productName": "WALTON WD215V04 21.45 FHD LED Frameless Monitor",
+    "image": "https://www.startech.com.bd/image/cache/catalog/monitor/walton/wd215v04/wd215v04-01-500x500.webp",
+    "category": "monitor",
+    "price": 8600,
+    "status": "In Stock",
+    "rating": 5,
+    "keyFeatures": [
+      { "Model": "Redmi RMMNT215NF" },
+      { "Resolution": "FHD (1920 x 1080)" },
+      { "Ports": "HDMI, VGA" }
+    ]
+  },
+  {
+    "productName": "Uniview MW3224-V 24 LED FHD Monitor With Built-In Speakers",
+    "image": "https://www.startech.com.bd/image/cache/catalog/monitor/xiaomi/rmmnt215nf/rmmnt215nf-01-500x500.jpg",
+    "category": "monitor",
+    "price": 12800,
+    "status": "In Stock",
+    "rating": 5,
+    "keyFeatures": [
+      { "Model": "MW3224-V" },
+      { "Resolution": "FHD (1920 x 1080)" },
+      { "Ports": "HDMI, VGA" }
+    ]
+  },
+  {
+    "productName": "ASUS TUF Gaming H3 7.1 Gaming Headphone - Grey & Gun Metal",
+    "image": "https://www.startech.com.bd/image/cache/catalog/headphone/asus/asus-h3/asus-h3-0001-500x500.jpg",
+    "category": "others",
+    "price": 3800,
+    "status": "In Stock",
+    "rating": 5,
+    "keyFeatures": [
+      { "Model": "Asus H3" },
+      { "Resolution": "FHD (1920 x 1080)" },
+      { "Ports": "HDMI, VGA" }
+    ]
+  },
+
+  {
+    "productName": "TP-Link TL-POE150S PoE Injector",
+    "image": "https://www.startech.com.bd/image/cache/catalog/switch/tp-link/tl-poe150s/tl-poe150s-01-500x500.webp",
+    "category": "others",
+    "price": 1600,
+    "status": "In Stock",
+    "rating": 5,
+    "keyFeatures": [
+      { "Model": "TL-POE150S" },
+      { "Resolution": "FHD (1920 x 1080)" },
+      { "Ports": "HDMI, VGA" }
+    ]
+  },
+  {
+    "productName": "iMICE GK-470 4 in 1 Gaming Combo",
+    "image": "https://www.startech.com.bd/image/cache/catalog/keyboard/imice/gk-470/gk-470-01-500x500.jpg",
+    "category": "others",
+    "price": 2350,
+    "status": "In Stock",
+    "rating": 5,
+    "keyFeatures": [
+      { "Model": "MW3224-V" },
+      { "Resolution": "FHD (1920 x 1080)" },
+      { "Ports": "HDMI, VGA" }
+    ]
   }
 ]

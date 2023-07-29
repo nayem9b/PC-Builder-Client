@@ -1,42 +1,31 @@
 import React from "react";
-
+import { Button, Grid } from "@nextui-org/react";
+import Link from "next/link";
 const WatchCTA = () => {
   return (
-    <div>
-      <div class="relative z-20 flex items-center overflow-hidden ">
+    <div className="mx-28">
+      <div class="relative z-20 flex justify-between overflow-hidden ">
         <div class="container relative flex px-6 py-16 mx-auto">
-          <div class="relative z-20 flex flex-col sm:w-2/3 lg:w-2/5">
+          <div class="relative z-20 flex flex-col justify-between sm:w-2/3 lg:w-2/5">
             <span class="w-20 h-2 mb-12 dark:bg-white"></span>
-            <h1 class="flex flex-col text-6xl font-black leading-none  uppercase font-bebas-neue sm:text-8xl ">
-              Be on
-              <span class="text-5xl sm:text-7xl">Time</span>
+            <h1 class="flex flex-col text-7xl font-black leading-none  uppercase font-bebas-neue  ">
+              Get 20% off
+              <span class="text-8xl ">on Ryzen Processor</span>
             </h1>
-            <p class="text-sm  sm:text-base dark:text-white">
-              Dimension of reality that makes change possible and
-              understandable. An indefinite and homogeneous environment in which
-              natural events and human existence take place.
-            </p>
+
             <div class="flex mt-8">
-              <a
-                href="#"
-                class="px-4 py-2 mr-4 text-white uppercase bg-pink-500 border-2 border-transparent rounded-lg text-md hover:bg-pink-400"
-              >
-                Get started
-              </a>
-              <a
-                href="#"
-                class="px-4 py-2 text-pink-500 uppercase bg-transparent border-2 border-pink-500 rounded-lg dark:text-white hover:bg-pink-500 hover:text-white text-md"
-              >
-                Read more
-              </a>
+              <button className="bg-black px-6 rounded-xl py-3 text-xl font-medium hover:bg-gray-900 text-white">
+                <Link href={"/category/processor"} className="text-white">
+                  View Processor
+                </Link>
+              </button>
             </div>
           </div>
-          <div class="relative hidden sm:block sm:w-1/3 lg:w-3/5">
-            <img
-              src="/images/object/10.png"
-              class="max-w-xs m-auto md:max-w-sm"
-            />
-          </div>
+
+          <img
+            src="https://images.unsplash.com/photo-1600348759986-dc35c2ec7743?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+            className="w-2/4 rounded-2xl"
+          />
         </div>
       </div>
     </div>

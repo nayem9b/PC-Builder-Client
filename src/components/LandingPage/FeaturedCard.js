@@ -1,76 +1,48 @@
 import React from "react";
 import { Card, Col, Row, Button, Text } from "@nextui-org/react";
 import Link from "next/link";
+import Image from "next/image";
 const FeaturedCard = ({ product }) => {
   return (
-    <div>
-      <Card css={{ w: "100%", h: "400px" }}>
-        <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
-          <Col>
-            <Text
-              size={12}
-              weight="bold"
-              transform="uppercase"
-              color="#ffffffAA"
-            >
-              {product?.status}
-            </Text>
-            <Text h3 color="black">
-              {product?.productName}
-            </Text>
-            <Text h4 color="black">
-              ${product?.price}
-            </Text>
-          </Col>
-        </Card.Header>
-        <Card.Body css={{ p: 0 }}>
-          <Card.Image
-            src="https://nextui.org/images/card-example-6.jpeg"
-            width="100%"
-            height="100%"
-            objectFit="cover"
-            alt="Card example background"
+    <div className="border rounded-2xl">
+      <Link
+        href={`/productdetails/${product._id}`}
+        class="group block overflow-hidden mx-3 my-3"
+      >
+        <div class="relative h-[350px] sm:h-[450px]">
+          <img
+            src={product?.image}
+            alt=""
+            class="absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0"
           />
-        </Card.Body>
-        <Card.Footer
-          isBlurred
-          css={{
-            position: "absolute",
-            bgBlur: "#ffffff66",
-            borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
-            bottom: 0,
-            zIndex: 1,
-          }}
-        >
-          <Row>
-            <Col>
-              <Text color="#000" size={12}>
-                Category: {product?.category}
-              </Text>
-              <Text color="#000" size={15}>
-                Rating : {product?.rating}
-              </Text>
-            </Col>
-            <Col>
-              <Row justify="flex-end">
-                <Button flat auto rounded color="secondary">
-                  <Link href={`/productdetails/${product._id}`}>
-                    {" "}
-                    <Text
-                      css={{ color: "inherit" }}
-                      size={12}
-                      weight="bold"
-                      transform="uppercase"
-                    >
-                      View
-                    </Text>
-                  </Link>
-                </Button>
-              </Row>
-            </Col>
-          </Row>
-        </Card.Footer>
-      </Card>
+
+          <img
+            src={product?.image}
+            alt=""
+            class="absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100"
+          />
+        </div>
+
+        <div class="relative bg-white pt-3">
+          <h3 class="text-sm text-gray-700 group-hover:underline group-hover:underline-offset-4">
+            {product.productName}
+          </h3>
+          <div class=" flex items-center justify-between text-gray-900">
+            <p class="tracking-wide">{product.status}</p>
+
+            <p class="text-xs uppercase tracking-wide">
+              Category: {product?.category}
+            </p>
+          </div>
+          <div class="mt-1.5 flex items-center justify-between text-gray-900">
+            <p class="tracking-wide">${product.price}</p>
+
+            <p class="text-xs uppercase tracking-wide">
+              Rating: {product?.rating} ⭐
+            </p>
+          </div>
+        </div>
+      </Link>
     </div>
   );
 };
