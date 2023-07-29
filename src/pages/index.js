@@ -10,7 +10,7 @@ export default function HomePage({ featured, featuredCategories }) {
   return (
     <div>
       <WatchCTA></WatchCTA>
-      <p className="text-center mb-10 text-5xl lg:text-6xl font-extrabold">
+      <p className="text-center mb-10 text-4xl lg:text-6xl font-extrabold">
         Featured Products
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mx-5 lg:mx-32">
@@ -18,7 +18,7 @@ export default function HomePage({ featured, featuredCategories }) {
           <FeaturedCard key={product.image} product={product}></FeaturedCard>
         ))}
       </div>
-      <p className="text-center m-10 text-6xl font-extrabold">
+      <p className="text-center m-10 text-4xl lg:text-6xl font-extrabold">
         Featured Categories
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 mx-5 lg:mx-32 gap-4">

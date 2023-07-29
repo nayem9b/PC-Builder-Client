@@ -8,8 +8,12 @@ export const authOptions = {
       clientId: process.env.GOOGLE_ID,
       clientSecret: process.env.GOOGLE_SECRET,
     }),
+
     // ...add more providers here
   ],
+  pages: {
+    signIn: "https://pcbuilderhub.vercel.app/signin",
+  },
 };
 
 export default NextAuth(authOptions);

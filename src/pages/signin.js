@@ -7,7 +7,7 @@ const signin = () => {
     <div className="flex bg-gradient-to-r from-indigo-500 justify-center items-center h-screen">
       <GoogleButton
         onClick={() =>
-          signIn("google", { callbackUrl: "http://localhost:3000" })
+          signIn("google", { callbackUrl: "https://pcbuilderhub.vercel.app" })
         }
       ></GoogleButton>
     </div>
