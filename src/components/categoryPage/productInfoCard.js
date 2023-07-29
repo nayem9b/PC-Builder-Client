@@ -4,9 +4,14 @@ import React from "react";
 import { Button } from "@nextui-org/react";
 import { useDispatch } from "react-redux";
 import { addToCart } from "@/redux/features/cart/cartSlice";
+import { useRouter } from "next/router";
 const ProductInfoCard = ({ product }) => {
   const dispatch = useDispatch();
-  console.log(product);
+  const router = useRouter();
+  const handleAddToBuilder = async () => {
+    await dispatch(addToCart(product));
+    router.push("/pcbuilder");
+  };
   return (
     <div>
       <Link
@@ -31,9 +36,9 @@ const ProductInfoCard = ({ product }) => {
             auto
             color="success"
             icon={<HeartIcon fill="currentColor" filled />}
-            onClick={() => dispatch(addToCart(product))}
+            onClick={handleAddToBuilder}
           >
-            Add
+            Add to builder
           </Button>
         </div>
 
